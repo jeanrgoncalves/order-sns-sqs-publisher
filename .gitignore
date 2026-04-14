@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### local_stack_auth_token ###
+src/main/resources/static/local_stack_auth_token

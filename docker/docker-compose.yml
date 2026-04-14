@@ -1,10 +1,12 @@
 services:
   localstack:
-    image: localstack/localstack:latest
+    image: localstack/localstack-pro:latest
     container_name: localstack-pub-sub
     ports:
       - "4566:4566"
       - "4510-4559:4510-4559"
+    env_file:
+      - ../src/main/resources/static/local_stack_auth_token
     environment:
       - DEBUG=1
       - SERVICES=sns,sqs
