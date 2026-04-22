@@ -6,4 +6,5 @@ data class OrderItem (
     val orderCode: String,
     val sku: String,
     val price: BigDecimal,
+    val quantity: Int,
 )
